@@ -15,7 +15,7 @@ export default function RootLayout({ children }) {
     <html lang="en" className="scroll-smooth">
       <body className={`${inter.className} `}>
         <AppShell>
-          <div className="max-w-full md:max-w-[50%] bg-gradient-to-b from-red-400 shadow-lg shadow-red-400 to-blue-200 mx-auto min-h-screen">
+          <div className="max-w-full md:max-w-[50%]  shadow-lg shadow-blue-500 bg-opacity-65 bg-bgCoverImage bg-no-repeat bg-center bg-cover mx-auto min-h-screen">
             {children}
           </div>
         </AppShell>
