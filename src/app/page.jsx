@@ -1,9 +1,17 @@
-import Image from "next/image";
+"use client";
+import { useParams } from "next/navigation";
 
-export default function Home() {
-  return (
-    <main>
-      <h2>halo</h2>
-    </main>
-  );
-}
+const page = ({ searchParams }) => {
+  const q = searchParams;
+  const nameUser = q.name;
+  if (nameUser) {
+    return (
+      <div className="text-center">
+        <h1>Selamat Datang</h1>
+        <p>{nameUser}</p>
+      </div>
+    );
+  }
+  return;
+};
+export default page;
