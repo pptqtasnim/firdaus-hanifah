@@ -111,7 +111,7 @@ const page = () => {
           jahatnya.
         </p>
         <p className="text-[10px]">
-          ustru PPTQ Tasnim menggunakan momen ini untuk pembiasaan bagi para
+          Justru PPTQ Tasnim menggunakan momen ini untuk pembiasaan bagi para
           santri menyambut bulan suci dengan meriah juga menjalaninya dengan
           penuh usaha amal kebaikan. Bentuk dari pendidikan yang kami hadirkan
           untuk enerasi masa depan.

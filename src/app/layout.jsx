@@ -11,7 +11,11 @@ const inter = Poppins({
 
 export const metadata = {
   title: "Undangan Tarhib Ramadhan",
-  description: "Tarhib Ramadhan sebelum menjelang Bulan Suci Ramadhan",
+  description:
+    "Tarhib Ramadhan sebelum menjelang Bulan Suci Ramadhan sekaligus penyerahan apresiasi kepada santri",
+  icons: {
+    icon: "/Logo.png",
+  },
 };
 
 export default function RootLayout({ children }) {
