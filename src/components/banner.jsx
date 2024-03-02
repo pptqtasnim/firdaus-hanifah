@@ -6,8 +6,8 @@ import { Button } from "@nextui-org/react";
 import Link from "next/link";
 const Banner = ({ name }) => {
   return (
-    <div className="min-h-screen w-full flex items-center text-black">
-      <div className="space-y-5">
+    <div className="min-h-screen w-full flex items-center justify-center text-black ">
+      <div className="space-y-5 ">
         <div className="w-full flex flex-col justify-center items-center">
           <Image
             src={"/Logo.png"}
@@ -15,6 +15,7 @@ const Banner = ({ name }) => {
             width={500}
             height={500}
             className="w-[50%]"
+            priority={true}
           />
           <p className="text-xl">undangan</p>
         </div>
