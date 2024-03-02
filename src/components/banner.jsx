@@ -18,7 +18,7 @@ const Banner = ({ name }) => {
           />
           <p className="text-xl">undangan</p>
         </div>
-        <div className="uppercase text-[26px] text-center font-bold">
+        <div className="uppercase text-[22px] text-center font-bold">
           <h1>tarhib ramadhan</h1> <span>&</span>
           <h2>Haflah Akhirus sannah</h2>
         </div>

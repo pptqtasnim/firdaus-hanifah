@@ -68,7 +68,7 @@ const TableAcara = () => {
       </thead>
       <tbody>
         {rows.map((row, i) => (
-          <tr key={i} className="text-center text-primary text-[10px]">
+          <tr key={i} className="text-center text-primary text-[8px]">
             <td>{i + 1}</td>
             <td>{row.waktu}</td>
             <td>{row.durasi}</td>

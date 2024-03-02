@@ -24,7 +24,7 @@ const page = () => {
       {/* Header */}
       <div className=" text-black flex w-[90%] mx-auto">
         <div className="w-2/3">
-          <div className="uppercase text-[16px] text-center font-bold">
+          <div className="uppercase text-[14px] text-center font-bold">
             <h1>tarhib ramadhan</h1> <span>&</span>
             <h2>Haflah Akhirus sannah</h2>
           </div>
