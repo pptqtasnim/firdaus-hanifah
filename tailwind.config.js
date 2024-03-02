@@ -10,10 +10,26 @@ module.exports = {
   theme: {
     extend: {
       backgroundImage: {
-        "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
         bgCoverImage: "url('/BgCover.jpeg')",
       },
     },
   },
-  plugins: [nextui()],
+  plugins: [
+    nextui({
+      themes: {
+        light: {
+          colors: {
+            primary: "#2A528A",
+          },
+        },
+        dark: {
+          colors: {
+            primary: "#2A528A",
+          },
+        },
+      },
+      addCommonColors: true,
+    }),
+    require("daisyui"),
+  ],
 };

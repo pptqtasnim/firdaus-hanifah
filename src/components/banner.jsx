@@ -2,6 +2,8 @@
 
 import Image from "next/image";
 
+import { Button } from "@nextui-org/react";
+import Link from "next/link";
 const Banner = ({ name }) => {
   return (
     <div className="min-h-screen w-full flex items-center text-black">
@@ -12,7 +14,7 @@ const Banner = ({ name }) => {
             alt="Logo"
             width={500}
             height={500}
-            className="w-1/3"
+            className="w-[50%]"
           />
           <p className="text-xl">undangan</p>
         </div>
@@ -22,7 +24,12 @@ const Banner = ({ name }) => {
         </div>
         <div className="space-y-5 text-center">
           <span>Kepada Yth,</span>
-          <p className="text-2xl uppercase font-[500]">{name}</p>
+          <p className="text-2xl font-[500]">{name}</p>
+          <Link href={"/undangan"}>
+            <Button color="primary" className="text-white mt-5">
+              Buka Undangan
+            </Button>
+          </Link>
           <p className="text-lg italic">Pondok Pesantren Tahaffuzul Qur'an</p>
           <p className="text-3xl font-[500]">(PPTQ) TASNIM</p>
         </div>

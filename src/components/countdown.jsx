@@ -2,7 +2,7 @@
 import { useState, useEffect } from "react";
 
 const Countdown = () => {
-  const targetDate = new Date("2024-03-20T00:00:00");
+  const targetDate = new Date("2024-03-09T00:00:00");
   const [countdown, setCountdown] = useState({
     days: 0,
     hours: 0,
@@ -36,12 +36,24 @@ const Countdown = () => {
   }, []);
 
   return (
-    <div>
-      <h2>Countdown Menuju 20 Maret 2024</h2>
-      <p>Days: {countdown.days}</p>
-      <p>Hours: {countdown.hours}</p>
-      <p>Minutes: {countdown.minutes}</p>
-      <p>Seconds: {countdown.seconds}</p>
+    <div className="grid grid-cols-4 text-center gap-5">
+      <div className="p-5 bg-primary rounded-lg shadow-lg shadow-blue-200 flex flex-col">
+        <p className="text-[10px]">Hari :</p>
+        <span className="text-[19px]"> {countdown.days}</span>
+      </div>
+
+      <div className="p-5 bg-primary rounded-lg shadow-lg shadow-blue-200 flex flex-col">
+        <p className="text-[10px]">Jam :</p>
+        <span className="text-[19px]">{countdown.hours}</span>
+      </div>
+      <div className="p-5 bg-primary rounded-lg shadow-lg shadow-blue-200 flex flex-col">
+        <p className="text-[10px]">Menit :</p>
+        <span className="text-[19px]">{countdown.minutes}</span>
+      </div>
+      <div className="p-5 bg-primary rounded-lg shadow-lg shadow-blue-200 flex flex-col">
+        <p className="text-[10px]">Detik :</p>
+        <span className="text-[19px]"> {countdown.seconds}</span>
+      </div>
     </div>
   );
 };
