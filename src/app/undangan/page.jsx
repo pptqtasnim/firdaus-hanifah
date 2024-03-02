@@ -22,13 +22,13 @@ const page = () => {
         />
       </div>
       {/* Header */}
-      <div className=" text-black flex w-[90%] mx-auto">
+      <div className=" text-black flex w-[95%] mx-auto">
         <div className="w-2/3">
           <div className="uppercase text-[14px] text-center font-bold">
             <h1>tarhib ramadhan</h1> <span>&</span>
             <h2>Haflah Akhirus sannah</h2>
           </div>
-          <p className="text-[8px] ml-2">
+          <p className="text-[8px] ml-3">
             Acara pondok pesantren yang bekerjasama dengan pihak masjid guna
             menyambut datangnya bulan suci Ramadhan dengan meriah yang
             menghadirkan rasa kebahagiaan, juga menghadirkan apresiasi terhadap
@@ -40,9 +40,9 @@ const page = () => {
           <Image
             src={"/Logo.png"}
             alt="Logo"
-            width={500}
+            width={600}
             height={500}
-            className="w-full h-full"
+            className="w-full h-full object-cover"
           />
         </div>
       </div>
@@ -79,11 +79,7 @@ const page = () => {
       </div>
       {/* Link Map */}
       <div className="flex justify-center">
-        <Link
-          href={
-            "https://www.google.com/maps/place/Pesantren+Mahasiswa+Al+Hikam+%26+Sekolah+Tinggi+Kulliyatul+Quran+(STKQ)/@-6.3595578,106.8189032,17z/data=!3m1!4b1!4m6!3m5!1s0x2e69ec21ceb82761:0xd8d26ee0bc14ffa4!8m2!3d-6.3595578!4d106.8214781!16s%2Fg%2F11b5q_8zxn?entry=ttu"
-          }
-        >
+        <Link href={"https://maps.app.goo.gl/cvJ2zeQ2jygkrUuHA"}>
           <Button color="primary" size="lg">
             Link Maps
           </Button>
@@ -93,11 +89,11 @@ const page = () => {
       <div className="space-y-5 text-black">
         <div className="flex justify-center">
           <Image
-            src={"/Ngaji.jpg"}
+            src={"/Hero.png"}
             alt="Logo"
             width={500}
             height={500}
-            className="w-full "
+            className="w-1/2 h-full object-cover"
           />
         </div>
         <h1 className=" font-bold text-3xl text-center">SPIRIT INSPIRATION</h1>

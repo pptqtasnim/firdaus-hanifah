@@ -7,7 +7,7 @@ const page = ({ searchParams }) => {
 
   if (nameUser) {
     return (
-      <div className="px-5">
+      <div className="px-5 ">
         <Banner name={nameUser} />
       </div>
     );
