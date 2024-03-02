@@ -1,10 +1,17 @@
 "use client";
 
 import Image from "next/image";
-
+import { useTypewriter, Cursor } from "react-simple-typewriter";
 import { Button } from "@nextui-org/react";
 import Link from "next/link";
 const Banner = ({ name }) => {
+  const [text] = useTypewriter({
+    words: ["tarhib ramadhan", "Haflah Akhirus sannah"],
+    loop: true,
+    typeSpeed: 50,
+    deleteSpeed: 30,
+    delaySpeed: 2000,
+  });
   return (
     <div className="min-h-screen w-full flex items-center justify-center text-black ">
       <div className="space-y-5 ">
@@ -19,9 +26,9 @@ const Banner = ({ name }) => {
           />
           <p className="text-xl">undangan</p>
         </div>
-        <div className="uppercase text-[22px] text-center font-bold">
-          <h1>tarhib ramadhan</h1> <span>&</span>
-          <h2>Haflah Akhirus sannah</h2>
+        <div className="uppercase text-[22px] text-center font-bold flex justify-center">
+          <h1>{text}</h1>{" "}
+          <Cursor cursorBlinking cursorStyle="|" cursorColor="#2A528A" />
         </div>
         <div className="space-y-5 text-center">
           <span>Kepada Yth,</span>

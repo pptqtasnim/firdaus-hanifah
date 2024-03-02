@@ -1,3 +1,4 @@
+"use client";
 import Countdown from "@/components/countdown";
 import TableAcara from "@/components/tableAcara";
 import { Button } from "@nextui-org/react";
@@ -8,10 +9,16 @@ import {
   MdOutlineAccessTime,
   MdOutlineLocationOn,
 } from "react-icons/md";
+import { motion } from "framer-motion";
 
 const page = () => {
   return (
-    <div className="p-5 space-y-5">
+    <motion.div
+      initial={{ opacity: 0, scale: 0 }}
+      animate={{ opacity: 1, scale: 1 }}
+      transition={{ duration: 1 }}
+      className="p-5 space-y-5"
+    >
       <div className="w-full flex justify-center ">
         <Image
           src={"/Bismillah.png"}
@@ -22,7 +29,12 @@ const page = () => {
         />
       </div>
       {/* Header */}
-      <div className=" text-black flex w-[95%] mx-auto">
+      <motion.div
+        initial={{ opacity: 0 }}
+        whileInView={{ opacity: 1 }}
+        transition={{ duration: 1 }}
+        className=" text-black flex w-[95%] mx-auto"
+      >
         <div className="w-2/3">
           <div className="uppercase text-[14px] text-center font-bold">
             <h1>tarhib ramadhan</h1> <span>&</span>
@@ -46,10 +58,14 @@ const page = () => {
             priority={true}
           />
         </div>
-      </div>
+      </motion.div>
       <div className="w-full bg-black h-[0.5px]"></div>
       {/* h2  */}
-      <div>
+      <motion.div
+        initial={{ opacity: 0 }}
+        whileInView={{ opacity: 1 }}
+        transition={{ duration: 1 }}
+      >
         <h1 className="text-black font-[600] text-[10px] text-center">
           Dengan hormat kami mengundang Bapak/Ibu/Saudara/i yang telah turut
           serta mendukung serta berperan dalam kemajuan pondok pesantren kami,
@@ -57,13 +73,22 @@ const page = () => {
           bentuk lainnya. Kehadiran dan partisipasi Bapak/Ibu/Saudara/i di acara
           ini akan menjadi suatu kehormatan bagi kami.
         </h1>
-      </div>
+      </motion.div>
       {/* Countdown */}
-      <div>
+      <motion.div
+        initial={{ opacity: 0 }}
+        whileInView={{ opacity: 1 }}
+        transition={{ duration: 1 }}
+      >
         <Countdown />
-      </div>
+      </motion.div>
       {/* Date */}
-      <div className="text-primary font-bold space-y-5">
+      <motion.div
+        initial={{ opacity: 0 }}
+        whileInView={{ opacity: 1 }}
+        transition={{ duration: 1 }}
+        className="text-primary font-bold space-y-5"
+      >
         <div className="flex items-center text-2xl">
           <MdOutlineDateRange size={50} /> <span>Sabtu, 09 Maret 2024</span>
         </div>
@@ -77,17 +102,27 @@ const page = () => {
             <p className="text-sm">perumahan bukit cengkeh 1</p>
           </div>
         </div>
-      </div>
+      </motion.div>
       {/* Link Map */}
-      <div className="flex justify-center">
+      <motion.div
+        initial={{ opacity: 0 }}
+        whileInView={{ opacity: 1 }}
+        transition={{ duration: 1 }}
+        className="flex justify-center"
+      >
         <Link href={"https://maps.app.goo.gl/cvJ2zeQ2jygkrUuHA"}>
           <Button color="primary" size="lg">
             Link Maps
           </Button>
         </Link>
-      </div>
+      </motion.div>
       {/* Description */}
-      <div className="space-y-5 text-black">
+      <motion.div
+        initial={{ opacity: 0 }}
+        whileInView={{ opacity: 1 }}
+        transition={{ duration: 1 }}
+        className="space-y-5 text-black"
+      >
         <div className="flex justify-center">
           <Image
             src={"/Hero.png"}
@@ -117,15 +152,20 @@ const page = () => {
           penuh usaha amal kebaikan. Bentuk dari pendidikan yang kami hadirkan
           untuk enerasi masa depan.
         </p>
-      </div>
+      </motion.div>
       {/* Susunan Acara */}
-      <div className="space-y-5">
+      <motion.div
+        initial={{ opacity: 0 }}
+        whileInView={{ opacity: 1 }}
+        transition={{ duration: 1 }}
+        className="space-y-5 pb-10"
+      >
         <h1 className=" font-bold text-3xl text-center text-black">
           SUSUNAN ACARA
         </h1>
         <TableAcara />
-      </div>
-    </div>
+      </motion.div>
+    </motion.div>
   );
 };
 export default page;
