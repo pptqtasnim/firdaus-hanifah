@@ -4,11 +4,8 @@ import TableAcara from "@/components/tableAcara";
 import { Button } from "@nextui-org/react";
 import Image from "next/image";
 import Link from "next/link";
-import {
-  MdOutlineDateRange,
-  MdOutlineAccessTime,
-  MdOutlineLocationOn,
-} from "react-icons/md";
+import { Waktu, Kalender, Lokasi } from "@/components/assets/icons";
+
 import { motion } from "framer-motion";
 
 const page = () => {
@@ -89,16 +86,21 @@ const page = () => {
         transition={{ duration: 1 }}
         className="text-primary font-bold space-y-5"
       >
-        <div className="flex items-center text-2xl">
-          <MdOutlineDateRange size={50} /> <span>Sabtu, 09 Maret 2024</span>
+        <div className="flex items-center text-xl">
+          <Kalender /> <span>Sabtu, 09 Maret 2024</span>
         </div>
-        <div className="flex items-center text-2xl">
-          <MdOutlineAccessTime size={50} /> <span>09.00 WIB s/d selesai</span>
+        <div className="flex items-center text-xl">
+          <div>
+            <Waktu />
+          </div>
+          <span>09.00 WIB s/d selesai</span>
         </div>
         <div className="flex items-center ">
-          <MdOutlineLocationOn size={50} />{" "}
+          <div className="">
+            <Lokasi />
+          </div>
           <div>
-            <span className="text-2xl">Masjid Al-Ikhwan</span>
+            <span className="text-xl">Masjid Al-Ikhwan</span>
             <p className="text-sm">perumahan bukit cengkeh 1</p>
           </div>
         </div>
