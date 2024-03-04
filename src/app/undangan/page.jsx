@@ -7,6 +7,7 @@ import Link from "next/link";
 import { Waktu, Kalender, Lokasi } from "@/components/assets/icons";
 
 import { motion } from "framer-motion";
+import ButtonLagu from "@/components/buttonMusic";
 
 const page = () => {
   return (
@@ -16,6 +17,7 @@ const page = () => {
       transition={{ duration: 1 }}
       className="p-5 space-y-5"
     >
+      <ButtonLagu />
       <div className="w-full flex justify-center ">
         <Image
           src={"/Bismillah.png"}
