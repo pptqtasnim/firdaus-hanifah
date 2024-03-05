@@ -12,10 +12,10 @@ const ButtonLagu = () => {
       }
     };
 
-    document.addEventListener("click", playAudio);
+    document.addEventListener("scroll", playAudio);
 
     return () => {
-      document.removeEventListener("click", playAudio);
+      document.removeEventListener("scroll", playAudio);
       audioElement.pause();
     };
   }, []);
