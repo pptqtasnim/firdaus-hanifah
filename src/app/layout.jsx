@@ -10,11 +10,11 @@ const inter = Poppins({
 });
 
 export const metadata = {
-  title: "Undangan Tarhib Ramadhan",
+  title: "Firdaus & Hanifah ",
   description:
-    "Tarhib Ramadhan sebelum menjelang Bulan Suci Ramadhan sekaligus penyerahan apresiasi kepada santri",
+    "Undangan Pernikahan Putra Pertama dari Bapak Yudi Taqiyuddin dan Ibu Unah Tursinah",
   icons: {
-    icon: "/Logo.png",
+    icon: "/ilustrasion2.png",
   },
 };
 
@@ -23,9 +23,9 @@ export default function RootLayout({ children }) {
     <html lang="en" className="scroll-smooth">
       <body className={`${inter.className} `}>
         <AppShell>
-          <div className="max-w-full md:max-w-[50%]  shadow-lg shadow-blue-500 bg-opacity-65 bg-bgCoverImage bg-no-repeat bg-center bg-cover mx-auto min-h-screen relative">
+          <div className="max-w-full md:max-w-[90%] xl:max-w-[50%]  shadow-lg shadow-blue-500 bg-opacity-65 bg-bgCoverImage bg-no-repeat bg-center bg-cover mx-auto min-h-screen relative">
             {children}
-            <Hubungi />
+            {/* <Hubungi /> */}
           </div>
         </AppShell>
       </body>

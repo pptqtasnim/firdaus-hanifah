@@ -15,20 +15,30 @@ const Banner = ({ name }) => {
   return (
     <div className="min-h-screen w-full flex items-center justify-center text-black ">
       <div className="space-y-5 ">
+        <p
+          className="text-xl uppercase text-center font-bold text-blue-800"
+          style={{ textShadow: "2px 2px 4px #ffff" }}
+        >
+          Undangan Pernikahan
+        </p>
+
         <div className="w-full flex flex-col justify-center items-center">
           <Image
-            src={"/Logo.png"}
+            src={"/savethedate.png"}
             alt="Logo"
             width={500}
             height={500}
             className="w-[50%]"
             priority={true}
           />
-          <p className="text-xl">undangan</p>
         </div>
-        <div className="uppercase text-[22px] text-center font-bold flex justify-center">
-          <h1>{text}</h1>{" "}
-          <Cursor cursorBlinking cursorStyle="|" cursorColor="#2A528A" />
+
+        <div className="text-center">
+          <div className="text-xl capitalize font-semibold text-primary">
+            <p>Sepdiana Miftahul firdaus</p>
+            <p>&</p>
+            <p>Hanifah Al Hanun </p>
+          </div>
         </div>
         <div className="space-y-5 text-center">
           <span>Kepada Yth,</span>
@@ -38,8 +48,6 @@ const Banner = ({ name }) => {
               Buka Undangan
             </Button>
           </Link>
-          <p className="text-lg italic">Pondok Pesantren Tahaffuzul Qur'an</p>
-          <p className="text-3xl font-[500]">(PPTQ) TASNIM</p>
         </div>
       </div>
     </div>

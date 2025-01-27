@@ -22,7 +22,7 @@ const ButtonLagu = () => {
 
   return (
     <audio ref={audioRef} loop>
-      <source src="/Lemon.mp3" type="audio/mpeg" />
+      <source src="/wedding.mp3" type="audio/mpeg" />
       Your browser does not support the audio element.
     </audio>
   );
