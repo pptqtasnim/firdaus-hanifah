@@ -11,7 +11,7 @@ const DatePage = () => {
       className="text-primary font-bold space-y-5"
     >
       <div className="flex items-center text-xl">
-        <Kalender /> <span>Sabtu, 09 Februari 2025</span>
+        <Kalender /> <span>Ahad, 09 Februari 2025</span>
       </div>
       <div className="flex items-center text-xl">
         <div>
