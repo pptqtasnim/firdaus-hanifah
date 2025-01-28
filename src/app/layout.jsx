@@ -12,7 +12,7 @@ const inter = Poppins({
 export const metadata = {
   title: "Firdaus & Hanifah ",
   description:
-    "Undangan Pernikahan Putra Pertama dari Bapak Yudi Taqiyuddin dan Ibu Unah Tursinah",
+    "Undangan Pernikahan Putra pertama dari bapak Yudi Taqiyuddin dan Ibu Unah Tursinah / Putri keenam dari bapak Herman Agus dan ibu Mulyani",
   icons: {
     icon: "/ilustrasion2.png",
   },
