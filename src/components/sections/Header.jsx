@@ -41,7 +41,7 @@ const Header = () => {
               Sepdiana Miftahul firdaus
             </p>
             <p className="text-[10px] italic text-slate-600">
-              Putra pertama dari bapak Yudi Taqiyuddin dan ibu unah tursinah
+              Putra pertama dari bapak Yudi Tahyudin dan ibu Unah Tursinah
             </p>
           </div>
           <p className="text-xl  font-semibold text-primary">&</p>
